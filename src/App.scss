@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
 :root {
-  --bg-img: url();
+  --bg-img: none;
 }
 * {
   margin: 0;
@@ -13,4 +13,22 @@ html {
 body {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
+  background-image: var(--bg-img);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.App {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    width: 50vw;
+    background-color: aliceblue;
+  }
+  p {
+    background-color: aliceblue;
+  }
 }
